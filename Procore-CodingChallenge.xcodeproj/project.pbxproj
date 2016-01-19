@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B059E4671C4EE047008A17F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B059E4661C4EE047008A17F6 /* main.m */; };
+		B059E46A1C4EE047008A17F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B059E4691C4EE047008A17F6 /* AppDelegate.m */; };
+		B059E46D1C4EE047008A17F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B059E46C1C4EE047008A17F6 /* ViewController.m */; };
+		B059E4701C4EE047008A17F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B059E46E1C4EE047008A17F6 /* Main.storyboard */; };
+		B059E4721C4EE047008A17F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B059E4711C4EE047008A17F6 /* Assets.xcassets */; };
+		B059E4751C4EE047008A17F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B059E4731C4EE047008A17F6 /* LaunchScreen.storyboard */; };
+		B059E4801C4EE047008A17F6 /* Procore_CodingChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B059E47F1C4EE047008A17F6 /* Procore_CodingChallengeTests.m */; };
+		B059E48B1C4EE048008A17F6 /* Procore_CodingChallengeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B059E48A1C4EE048008A17F6 /* Procore_CodingChallengeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B059E47C1C4EE047008A17F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B059E45A1C4EE047008A17F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B059E4611C4EE047008A17F6;
+			remoteInfo = "Procore-CodingChallenge";
+		};
+		B059E4871C4EE048008A17F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B059E45A1C4EE047008A17F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B059E4611C4EE047008A17F6;
+			remoteInfo = "Procore-CodingChallenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B059E4621C4EE047008A17F6 /* Procore-CodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Procore-CodingChallenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B059E4661C4EE047008A17F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B059E4681C4EE047008A17F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B059E4691C4EE047008A17F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B059E46B1C4EE047008A17F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B059E46C1C4EE047008A17F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B059E46F1C4EE047008A17F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B059E4711C4EE047008A17F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B059E4741C4EE047008A17F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B059E4761C4EE047008A17F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B059E47B1C4EE047008A17F6 /* Procore-CodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Procore-CodingChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B059E47F1C4EE047008A17F6 /* Procore_CodingChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Procore_CodingChallengeTests.m; sourceTree = "<group>"; };
+		B059E4811C4EE047008A17F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B059E4861C4EE048008A17F6 /* Procore-CodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Procore-CodingChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B059E48A1C4EE048008A17F6 /* Procore_CodingChallengeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Procore_CodingChallengeUITests.m; sourceTree = "<group>"; };
+		B059E48C1C4EE048008A17F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B059E45F1C4EE047008A17F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B059E4781C4EE047008A17F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B059E4831C4EE048008A17F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B059E4591C4EE047008A17F6 = {
+			isa = PBXGroup;
+			children = (
+				B059E4641C4EE047008A17F6 /* Procore-CodingChallenge */,
+				B059E47E1C4EE047008A17F6 /* Procore-CodingChallengeTests */,
+				B059E4891C4EE048008A17F6 /* Procore-CodingChallengeUITests */,
+				B059E4631C4EE047008A17F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B059E4631C4EE047008A17F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B059E4621C4EE047008A17F6 /* Procore-CodingChallenge.app */,
+				B059E47B1C4EE047008A17F6 /* Procore-CodingChallengeTests.xctest */,
+				B059E4861C4EE048008A17F6 /* Procore-CodingChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B059E4641C4EE047008A17F6 /* Procore-CodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				B059E4681C4EE047008A17F6 /* AppDelegate.h */,
+				B059E4691C4EE047008A17F6 /* AppDelegate.m */,
+				B059E46B1C4EE047008A17F6 /* ViewController.h */,
+				B059E46C1C4EE047008A17F6 /* ViewController.m */,
+				B059E46E1C4EE047008A17F6 /* Main.storyboard */,
+				B059E4711C4EE047008A17F6 /* Assets.xcassets */,
+				B059E4731C4EE047008A17F6 /* LaunchScreen.storyboard */,
+				B059E4761C4EE047008A17F6 /* Info.plist */,
+				B059E4651C4EE047008A17F6 /* Supporting Files */,
+			);
+			path = "Procore-CodingChallenge";
+			sourceTree = "<group>";
+		};
+		B059E4651C4EE047008A17F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B059E4661C4EE047008A17F6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B059E47E1C4EE047008A17F6 /* Procore-CodingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B059E47F1C4EE047008A17F6 /* Procore_CodingChallengeTests.m */,
+				B059E4811C4EE047008A17F6 /* Info.plist */,
+			);
+			path = "Procore-CodingChallengeTests";
+			sourceTree = "<group>";
+		};
+		B059E4891C4EE048008A17F6 /* Procore-CodingChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B059E48A1C4EE048008A17F6 /* Procore_CodingChallengeUITests.m */,
+				B059E48C1C4EE048008A17F6 /* Info.plist */,
+			);
+			path = "Procore-CodingChallengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B059E4611C4EE047008A17F6 /* Procore-CodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B059E48F1C4EE048008A17F6 /* Build configuration list for PBXNativeTarget "Procore-CodingChallenge" */;
+			buildPhases = (
+				B059E45E1C4EE047008A17F6 /* Sources */,
+				B059E45F1C4EE047008A17F6 /* Frameworks */,
+				B059E4601C4EE047008A17F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Procore-CodingChallenge";
+			productName = "Procore-CodingChallenge";
+			productReference = B059E4621C4EE047008A17F6 /* Procore-CodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B059E47A1C4EE047008A17F6 /* Procore-CodingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B059E4921C4EE048008A17F6 /* Build configuration list for PBXNativeTarget "Procore-CodingChallengeTests" */;
+			buildPhases = (
+				B059E4771C4EE047008A17F6 /* Sources */,
+				B059E4781C4EE047008A17F6 /* Frameworks */,
+				B059E4791C4EE047008A17F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B059E47D1C4EE047008A17F6 /* PBXTargetDependency */,
+			);
+			name = "Procore-CodingChallengeTests";
+			productName = "Procore-CodingChallengeTests";
+			productReference = B059E47B1C4EE047008A17F6 /* Procore-CodingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B059E4851C4EE048008A17F6 /* Procore-CodingChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B059E4951C4EE048008A17F6 /* Build configuration list for PBXNativeTarget "Procore-CodingChallengeUITests" */;
+			buildPhases = (
+				B059E4821C4EE048008A17F6 /* Sources */,
+				B059E4831C4EE048008A17F6 /* Frameworks */,
+				B059E4841C4EE048008A17F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B059E4881C4EE048008A17F6 /* PBXTargetDependency */,
+			);
+			name = "Procore-CodingChallengeUITests";
+			productName = "Procore-CodingChallengeUITests";
+			productReference = B059E4861C4EE048008A17F6 /* Procore-CodingChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B059E45A1C4EE047008A17F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ariel-gnon";
+				TargetAttributes = {
+					B059E4611C4EE047008A17F6 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B059E47A1C4EE047008A17F6 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B059E4611C4EE047008A17F6;
+					};
+					B059E4851C4EE048008A17F6 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B059E4611C4EE047008A17F6;
+					};
+				};
+			};
+			buildConfigurationList = B059E45D1C4EE047008A17F6 /* Build configuration list for PBXProject "Procore-CodingChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B059E4591C4EE047008A17F6;
+			productRefGroup = B059E4631C4EE047008A17F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B059E4611C4EE047008A17F6 /* Procore-CodingChallenge */,
+				B059E47A1C4EE047008A17F6 /* Procore-CodingChallengeTests */,
+				B059E4851C4EE048008A17F6 /* Procore-CodingChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B059E4601C4EE047008A17F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B059E4751C4EE047008A17F6 /* LaunchScreen.storyboard in Resources */,
+				B059E4721C4EE047008A17F6 /* Assets.xcassets in Resources */,
+				B059E4701C4EE047008A17F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B059E4791C4EE047008A17F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B059E4841C4EE048008A17F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B059E45E1C4EE047008A17F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B059E46D1C4EE047008A17F6 /* ViewController.m in Sources */,
+				B059E46A1C4EE047008A17F6 /* AppDelegate.m in Sources */,
+				B059E4671C4EE047008A17F6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B059E4771C4EE047008A17F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B059E4801C4EE047008A17F6 /* Procore_CodingChallengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B059E4821C4EE048008A17F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B059E48B1C4EE048008A17F6 /* Procore_CodingChallengeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B059E47D1C4EE047008A17F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B059E4611C4EE047008A17F6 /* Procore-CodingChallenge */;
+			targetProxy = B059E47C1C4EE047008A17F6 /* PBXContainerItemProxy */;
+		};
+		B059E4881C4EE048008A17F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B059E4611C4EE047008A17F6 /* Procore-CodingChallenge */;
+			targetProxy = B059E4871C4EE048008A17F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B059E46E1C4EE047008A17F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B059E46F1C4EE047008A17F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B059E4731C4EE047008A17F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B059E4741C4EE047008A17F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B059E48D1C4EE048008A17F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B059E48E1C4EE048008A17F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B059E4901C4EE048008A17F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Procore-CodingChallenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ariel-gnon.Procore-CodingChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B059E4911C4EE048008A17F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Procore-CodingChallenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ariel-gnon.Procore-CodingChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B059E4931C4EE048008A17F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Procore-CodingChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ariel-gnon.Procore-CodingChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Procore-CodingChallenge.app/Procore-CodingChallenge";
+			};
+			name = Debug;
+		};
+		B059E4941C4EE048008A17F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Procore-CodingChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ariel-gnon.Procore-CodingChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Procore-CodingChallenge.app/Procore-CodingChallenge";
+			};
+			name = Release;
+		};
+		B059E4961C4EE048008A17F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Procore-CodingChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ariel-gnon.Procore-CodingChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Procore-CodingChallenge";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B059E4971C4EE048008A17F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Procore-CodingChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ariel-gnon.Procore-CodingChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Procore-CodingChallenge";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B059E45D1C4EE047008A17F6 /* Build configuration list for PBXProject "Procore-CodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B059E48D1C4EE048008A17F6 /* Debug */,
+				B059E48E1C4EE048008A17F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B059E48F1C4EE048008A17F6 /* Build configuration list for PBXNativeTarget "Procore-CodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B059E4901C4EE048008A17F6 /* Debug */,
+				B059E4911C4EE048008A17F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B059E4921C4EE048008A17F6 /* Build configuration list for PBXNativeTarget "Procore-CodingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B059E4931C4EE048008A17F6 /* Debug */,
+				B059E4941C4EE048008A17F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B059E4951C4EE048008A17F6 /* Build configuration list for PBXNativeTarget "Procore-CodingChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B059E4961C4EE048008A17F6 /* Debug */,
+				B059E4971C4EE048008A17F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B059E45A1C4EE047008A17F6 /* Project object */;
+}
