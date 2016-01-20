@@ -12,6 +12,10 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++ (AppDelegate *)delegate;
+- (void)startPage;
+- (void)getPrimes;
+
 
 @end
 

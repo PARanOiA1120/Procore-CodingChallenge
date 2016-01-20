@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "StartViewController.h"
+#import "PrimeViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +19,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self startPage];
+    [self.window makeKeyAndVisible];
     return YES;
 }
+
+- (void)startPage
+{
+    StartViewController *startView = [[StartViewController alloc] init];
+    self.window.rootViewController = startView;
+    [self.window makeKeyAndVisible];
+    
+}
+
+-(void)getPrimes{
+    PrimeViewController *primeView = [[PrimeViewController alloc] init];
+    self.window.rootViewController = primeView;
+    [self.window makeKeyAndVisible];
+}
+
++ (AppDelegate *)delegate {
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
+
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+    NSUInteger orientations = UIInterfaceOrientationMaskAllButUpsideDown;
+    
+    return orientations;
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

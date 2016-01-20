@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B02A40F11C4F1B9000CFD08A /* PrimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02A40EF1C4F1B9000CFD08A /* PrimeViewController.m */; };
+		B02A40F21C4F1B9000CFD08A /* PrimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02A40F01C4F1B9000CFD08A /* PrimeViewController.xib */; };
+		B02A40F61C4F1ECF00CFD08A /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02A40F41C4F1ECF00CFD08A /* StartViewController.m */; };
+		B02A40F71C4F1ECF00CFD08A /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02A40F51C4F1ECF00CFD08A /* StartViewController.xib */; };
 		B059E4671C4EE047008A17F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B059E4661C4EE047008A17F6 /* main.m */; };
 		B059E46A1C4EE047008A17F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B059E4691C4EE047008A17F6 /* AppDelegate.m */; };
-		B059E46D1C4EE047008A17F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B059E46C1C4EE047008A17F6 /* ViewController.m */; };
 		B059E4701C4EE047008A17F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B059E46E1C4EE047008A17F6 /* Main.storyboard */; };
 		B059E4721C4EE047008A17F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B059E4711C4EE047008A17F6 /* Assets.xcassets */; };
 		B059E4751C4EE047008A17F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B059E4731C4EE047008A17F6 /* LaunchScreen.storyboard */; };
 		B059E4801C4EE047008A17F6 /* Procore_CodingChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B059E47F1C4EE047008A17F6 /* Procore_CodingChallengeTests.m */; };
 		B059E48B1C4EE048008A17F6 /* Procore_CodingChallengeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B059E48A1C4EE048008A17F6 /* Procore_CodingChallengeUITests.m */; };
+		B06BE73D1C4F0EE100D667CF /* procore_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B06BE73C1C4F0EE100D667CF /* procore_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B02A40EE1C4F1B9000CFD08A /* PrimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimeViewController.h; sourceTree = "<group>"; };
+		B02A40EF1C4F1B9000CFD08A /* PrimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeViewController.m; sourceTree = "<group>"; };
+		B02A40F01C4F1B9000CFD08A /* PrimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrimeViewController.xib; sourceTree = "<group>"; };
+		B02A40F31C4F1ECF00CFD08A /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		B02A40F41C4F1ECF00CFD08A /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		B02A40F51C4F1ECF00CFD08A /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 		B059E4621C4EE047008A17F6 /* Procore-CodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Procore-CodingChallenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B059E4661C4EE047008A17F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B059E4681C4EE047008A17F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B059E4691C4EE047008A17F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B059E46B1C4EE047008A17F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B059E46C1C4EE047008A17F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B059E46F1C4EE047008A17F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B059E4711C4EE047008A17F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B059E4741C4EE047008A17F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +59,7 @@
 		B059E4861C4EE048008A17F6 /* Procore-CodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Procore-CodingChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B059E48A1C4EE048008A17F6 /* Procore_CodingChallengeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Procore_CodingChallengeUITests.m; sourceTree = "<group>"; };
 		B059E48C1C4EE048008A17F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B06BE73C1C4F0EE100D667CF /* procore_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = procore_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +110,15 @@
 		B059E4641C4EE047008A17F6 /* Procore-CodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				B06BE73C1C4F0EE100D667CF /* procore_logo.png */,
 				B059E4681C4EE047008A17F6 /* AppDelegate.h */,
 				B059E4691C4EE047008A17F6 /* AppDelegate.m */,
-				B059E46B1C4EE047008A17F6 /* ViewController.h */,
-				B059E46C1C4EE047008A17F6 /* ViewController.m */,
+				B02A40F31C4F1ECF00CFD08A /* StartViewController.h */,
+				B02A40F41C4F1ECF00CFD08A /* StartViewController.m */,
+				B02A40F51C4F1ECF00CFD08A /* StartViewController.xib */,
+				B02A40EE1C4F1B9000CFD08A /* PrimeViewController.h */,
+				B02A40EF1C4F1B9000CFD08A /* PrimeViewController.m */,
+				B02A40F01C4F1B9000CFD08A /* PrimeViewController.xib */,
 				B059E46E1C4EE047008A17F6 /* Main.storyboard */,
 				B059E4711C4EE047008A17F6 /* Assets.xcassets */,
 				B059E4731C4EE047008A17F6 /* LaunchScreen.storyboard */,
@@ -243,9 +257,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02A40F21C4F1B9000CFD08A /* PrimeViewController.xib in Resources */,
 				B059E4751C4EE047008A17F6 /* LaunchScreen.storyboard in Resources */,
+				B06BE73D1C4F0EE100D667CF /* procore_logo.png in Resources */,
 				B059E4721C4EE047008A17F6 /* Assets.xcassets in Resources */,
 				B059E4701C4EE047008A17F6 /* Main.storyboard in Resources */,
+				B02A40F71C4F1ECF00CFD08A /* StartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B059E46D1C4EE047008A17F6 /* ViewController.m in Sources */,
+				B02A40F11C4F1B9000CFD08A /* PrimeViewController.m in Sources */,
+				B02A40F61C4F1ECF00CFD08A /* StartViewController.m in Sources */,
 				B059E46A1C4EE047008A17F6 /* AppDelegate.m in Sources */,
 				B059E4671C4EE047008A17F6 /* main.m in Sources */,
 			);
@@ -498,6 +516,7 @@
 				B059E4911C4EE048008A17F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B059E4921C4EE048008A17F6 /* Build configuration list for PBXNativeTarget "Procore-CodingChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +525,7 @@
 				B059E4941C4EE048008A17F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B059E4951C4EE048008A17F6 /* Build configuration list for PBXNativeTarget "Procore-CodingChallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +534,7 @@
 				B059E4971C4EE048008A17F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

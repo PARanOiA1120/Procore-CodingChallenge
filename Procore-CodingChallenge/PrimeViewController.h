@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PrimeViewController.h
 //  Procore-CodingChallenge
 //
 //  Created by Ariel Xin on 1/19/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PrimeViewController : UIViewController
 
 @end
-
