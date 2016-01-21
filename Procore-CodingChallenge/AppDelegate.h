@@ -14,7 +14,6 @@
 
 + (AppDelegate *)delegate;
 - (void)startPage;
-- (void)getPrimes;
 
 
 @end

@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrimeViewController">
             <connections>
+                <outlet property="tabelView" destination="h4l-3A-fFZ" id="N1G-cg-BlL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,45 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h4l-3A-fFZ">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xRy-Cr-dUi"/>
+                        <outlet property="delegate" destination="-1" id="pKR-pM-5H4"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="h4l-3A-fFZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2of-jB-d6S"/>
+                <constraint firstItem="h4l-3A-fFZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="P5R-Il-Ybw"/>
+                <constraint firstAttribute="bottom" secondItem="h4l-3A-fFZ" secondAttribute="bottom" id="TsV-4C-69h"/>
+                <constraint firstAttribute="trailing" secondItem="h4l-3A-fFZ" secondAttribute="trailing" id="m74-Dd-vR5"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="h4l-3A-fFZ"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="2of-jB-d6S"/>
+                    <exclude reference="P5R-Il-Ybw"/>
+                    <exclude reference="TsV-4C-69h"/>
+                    <exclude reference="m74-Dd-vR5"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="h4l-3A-fFZ"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="2of-jB-d6S"/>
+                    <include reference="P5R-Il-Ybw"/>
+                    <include reference="TsV-4C-69h"/>
+                    <include reference="m74-Dd-vR5"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+static NSMutableArray *primeList;
+
 @interface StartViewController : UIViewController
+
+-(NSMutableArray *)getPrimeArray:(NSString *)upperBound;
 
 @end

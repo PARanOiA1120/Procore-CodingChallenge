@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "StartViewController.h"
-#import "PrimeViewController.h"
 
 @interface AppDelegate ()
 
@@ -34,11 +33,6 @@
     
 }
 
--(void)getPrimes{
-    PrimeViewController *primeView = [[PrimeViewController alloc] init];
-    self.window.rootViewController = primeView;
-    [self.window makeKeyAndVisible];
-}
 
 + (AppDelegate *)delegate {
     return (AppDelegate *)[UIApplication sharedApplication].delegate;

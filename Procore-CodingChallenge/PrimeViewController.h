@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PrimeViewController : UIViewController
-
+@interface PrimeViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tabelView;
+@property (nonatomic, strong) NSMutableArray *dataSource;
+@property (nonatomic, retain) NSString *limitStr;
 @end
