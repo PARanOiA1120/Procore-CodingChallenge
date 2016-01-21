@@ -10,7 +10,7 @@
 
 static NSMutableArray *primeList;
 
-@interface StartViewController : UIViewController
+@interface StartViewController : UIViewController<UIAlertViewDelegate>
 
 -(NSMutableArray *)getPrimeArray:(NSString *)upperBound;
 

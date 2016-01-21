@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrimeViewController">
             <connections>
+                <outlet property="back" destination="IVM-tB-Bbo" id="kw8-mX-VkG"/>
+                <outlet property="navBar" destination="vTF-Mq-935" id="8xy-aC-Y5C"/>
                 <outlet property="tabelView" destination="h4l-3A-fFZ" id="N1G-cg-BlL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,36 +26,66 @@
                         <outlet property="delegate" destination="-1" id="pKR-pM-5H4"/>
                     </connections>
                 </tableView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ehi-qA-XBv">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <color key="backgroundColor" red="0.78823529410000004" green="0.6705882353" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="barTintColor" red="0.90980392156862744" green="0.80000000000000004" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" red="0.63921568627450975" green="0.24705882352941178" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Title" id="vTF-Mq-935">
+                            <barButtonItem key="leftBarButtonItem" title="Back" id="IVM-tB-Bbo">
+                                <color key="tintColor" red="0.63921568630000003" green="0.2470588235" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="Back:" destination="-1" id="mOD-rd-iLp"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="h4l-3A-fFZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2of-jB-d6S"/>
-                <constraint firstItem="h4l-3A-fFZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="P5R-Il-Ybw"/>
-                <constraint firstAttribute="bottom" secondItem="h4l-3A-fFZ" secondAttribute="bottom" id="TsV-4C-69h"/>
-                <constraint firstAttribute="trailing" secondItem="h4l-3A-fFZ" secondAttribute="trailing" id="m74-Dd-vR5"/>
+                <constraint firstAttribute="trailing" secondItem="h4l-3A-fFZ" secondAttribute="trailing" id="Pzd-Dc-LvS"/>
+                <constraint firstItem="h4l-3A-fFZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RWd-J2-4RJ"/>
+                <constraint firstItem="h4l-3A-fFZ" firstAttribute="leading" secondItem="Ehi-qA-XBv" secondAttribute="leading" id="W0J-U9-AE7"/>
+                <constraint firstItem="h4l-3A-fFZ" firstAttribute="trailing" secondItem="Ehi-qA-XBv" secondAttribute="trailing" id="bBg-vx-lhp"/>
+                <constraint firstItem="h4l-3A-fFZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="42" id="c9H-38-47q"/>
+                <constraint firstItem="Ehi-qA-XBv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eaJ-zA-MR4"/>
+                <constraint firstAttribute="bottom" secondItem="h4l-3A-fFZ" secondAttribute="bottom" id="jc5-QS-tjU"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="h4l-3A-fFZ"/>
+                    <exclude reference="Ehi-qA-XBv"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="2of-jB-d6S"/>
-                    <exclude reference="P5R-Il-Ybw"/>
-                    <exclude reference="TsV-4C-69h"/>
-                    <exclude reference="m74-Dd-vR5"/>
+                    <exclude reference="eaJ-zA-MR4"/>
+                    <exclude reference="Pzd-Dc-LvS"/>
+                    <exclude reference="RWd-J2-4RJ"/>
+                    <exclude reference="W0J-U9-AE7"/>
+                    <exclude reference="bBg-vx-lhp"/>
+                    <exclude reference="c9H-38-47q"/>
+                    <exclude reference="jc5-QS-tjU"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="h4l-3A-fFZ"/>
+                    <include reference="Ehi-qA-XBv"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="2of-jB-d6S"/>
-                    <include reference="P5R-Il-Ybw"/>
-                    <include reference="TsV-4C-69h"/>
-                    <include reference="m74-Dd-vR5"/>
+                    <include reference="eaJ-zA-MR4"/>
+                    <include reference="Pzd-Dc-LvS"/>
+                    <include reference="RWd-J2-4RJ"/>
+                    <include reference="W0J-U9-AE7"/>
+                    <include reference="bBg-vx-lhp"/>
+                    <include reference="c9H-38-47q"/>
+                    <include reference="jc5-QS-tjU"/>
                 </mask>
             </variation>
+            <point key="canvasLocation" x="505" y="244"/>
         </view>
     </objects>
 </document>

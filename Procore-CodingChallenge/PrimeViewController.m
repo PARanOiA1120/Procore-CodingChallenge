@@ -11,6 +11,8 @@
 
 
 @interface PrimeViewController ()
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *back;
+@property (weak, nonatomic) IBOutlet UINavigationItem *navBar;
 
 @end
 
@@ -22,6 +24,10 @@
     StartViewController *startView = [[StartViewController alloc] init];
     self.dataSource = [startView getPrimeArray:self.limitStr];
     NSLog(@"Prime Count: %lu", (unsigned long)[self.dataSource count]);
+    
+    NSString *primesCount = [NSString stringWithFormat:@"%lu", (unsigned long)[self.dataSource count]];
+    
+    self.navBar.title = [primesCount stringByAppendingString:@" Primes Found!"];
     
 }
 
@@ -41,15 +47,31 @@
     return [self.dataSource count];
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellIdentifier = @"cellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     cell.backgroundColor = [UIColor colorWithRed:250/255.0f green:250/255.0f blue:250/255.0f alpha:1.0];
+    cell.textColor = [UIColor colorWithRed:176/255.0f green:23/255.0f blue:31/255.0f alpha:1.0];
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
     cell.textLabel.text = [self.dataSource objectAtIndex:indexPath.row];
     return cell;
+}
+
+
+- (IBAction)Back:(id)sender {
+    StartViewController *startView = [[StartViewController alloc] init];
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.3;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromLeft;
+    [self.view.window.layer addAnimation:transition forKey:nil];
+    
+    [self presentViewController:startView animated:NO completion:^{}];
 }
 
 /*

@@ -23,7 +23,11 @@
     [super viewDidLoad];
     
     primeList = [[NSMutableArray alloc] init];
-    // Do any additional setup after loading the view from its nib.
+
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyboard)];
+    tap.numberOfTapsRequired = 1;
+    tap.numberOfTouchesRequired = 1;
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,16 +37,50 @@
 
 
 - (IBAction)getPrimes:(id)sender {
-    PrimeViewController *primeVC=[[PrimeViewController alloc] init];
-    primeVC.limitStr = self.limit.text;
-    CATransition *transition = [CATransition animation];
-    transition.duration = 0.3;
-    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    transition.type = kCATransitionPush;
-    transition.subtype = kCATransitionFromRight;
-    [self.view.window.layer addAnimation:transition forKey:nil];
+    if([self.limit.text length] == 0){
+        UIAlertController *alert = [UIAlertController
+                                    alertControllerWithTitle:@"Warning: Mising Input"
+                                    message:@"Please enter a number as the uppder bound."
+                                    preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okButton = [UIAlertAction
+                                    actionWithTitle:@"OK"
+                                    style:UIAlertActionStyleDefault
+                                    handler:^(UIAlertAction * action)
+                                    {}];
+        
+        [alert addAction:okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
     
-    [self presentViewController:primeVC animated:NO completion:^{}];
+    else if([self.limit.text intValue] == 0){
+        UIAlertController *alert = [UIAlertController
+                                    alertControllerWithTitle:@"Warning: Invalid Input"
+                                    message:@"Please enter a number as the uppder bound."
+                                    preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okButton = [UIAlertAction
+                                   actionWithTitle:@"OK"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action)
+                                   {}];
+        
+        [alert addAction:okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    
+    else{
+        PrimeViewController *primeVC=[[PrimeViewController alloc] init];
+        primeVC.limitStr = self.limit.text;
+        CATransition *transition = [CATransition animation];
+        transition.duration = 0.3;
+        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        transition.type = kCATransitionPush;
+        transition.subtype = kCATransitionFromRight;
+        [self.view.window.layer addAnimation:transition forKey:nil];
+        
+        [self presentViewController:primeVC animated:NO completion:^{}];
+    }
 }
 
 - (NSMutableArray *) getPrimeArray: (NSString *)upperBound{
@@ -84,6 +122,9 @@
     return primeList;
 }
 
+- (void)closeKeyboard {
+    [self.limit resignFirstResponder];
+}
 
 
 /*
